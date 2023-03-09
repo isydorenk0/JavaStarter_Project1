@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number: ");
-        int input = scanner.nextInt();
-        String inputStr = String.valueOf(input);
+        String input = scanner.nextLine();
         int sum = 0;
-        for (int i = 0; i < inputStr.length(); i++){
-            sum += Character.getNumericValue(inputStr.charAt(i));
+        for (int i = 0; i < input.length(); i++){
+            sum += Character.getNumericValue(input.charAt(i));
         }
-        System.out.println("Sum of all digits of " + inputStr + " is: " + sum);
+        System.out.println("Sum of all digits of " + input + " is: " + sum);
     }
 }
